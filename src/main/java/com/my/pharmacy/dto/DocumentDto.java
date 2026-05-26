@@ -8,16 +8,16 @@ import lombok.ToString;
 @ToString
 public class DocumentDto {
     @JsonProperty("address_name")
-     private String addressName;
+    private String addressName;
 
     @JsonProperty("place_name")
-    private String  placeName;
+    private String placeName;
 
     @JsonProperty("phone")
-    private String  Phone;
+    private String phone;
 
     @JsonProperty("x")
-    private double longitude; //경도
+    private double longitude;  // 경도
     @JsonProperty("y")
     private double latitude; // 위도
 

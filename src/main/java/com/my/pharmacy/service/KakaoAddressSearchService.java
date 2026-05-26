@@ -36,7 +36,7 @@ public class KakaoAddressSearchService {
         log.info("address : " +  address);
         // 넘어오는 주소값이 비었는지 확인
         if(ObjectUtils.isEmpty(address)) return null;
-
+        
         // 1. URL 만들기
         // UriBuilder : URL 구성에 필요한 값을 붙여서 완성형 URL을 생성
         UriComponentsBuilder uriBuilder = UriComponentsBuilder

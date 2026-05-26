@@ -47,19 +47,19 @@
 </div>
 
 <!--부트스트랩 js, jquery 추가-->
+<script src="/js/bootstrap.min.js"></script>
 <script src="//t1.kakaocdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded",function () {
-        const  addressInput = document.getElementById("address_kakao");
-        addressInput.addEventListener("click",function () {
+    document.addEventListener("DOMContentLoaded", function (){
+        const addressInput = document.getElementById("address_kakao");
+        addressInput.addEventListener("click", function (){
             new kakao.Postcode({
                 oncomplete: function(data) {
-                    // console.log(data.data) {
-                        addressInput.value = data.address;
-                    }
+                    // console.log(data.address)
+                    addressInput.value = data.address;
                 }
             }).open();
-                                                         })
+        })
     })
 </script>
 </body>
